@@ -32,4 +32,4 @@ You can check out a live demo of the TravelPlanner project: https://muhametterna
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/TravelPlanner.git
+   git clone https://github.com/MuhametTernava/travelPlanner.git
