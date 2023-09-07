@@ -1,0 +1,110 @@
+.form-container {
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-city,
+.date,
+.search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(1, 0, 0, 1.5);
+  height: 45px;
+  background-color: #fff;
+}
+
+.form-container input {
+  width: 100%;
+  border: 0px solid #ccc;
+  background-color: transparent;
+  font-size: 20px;
+  outline: none;
+  border-radius: 15px;
+}
+
+.form-container button {
+  color: #000;
+  border: none;
+  cursor: pointer;
+
+  border-radius: 15px;
+  font-size: 20px;
+  text-align: center;
+  border: 0px solid #ccc;
+}
+
+.search:hover {
+  background-color: #45a049;
+  color: #fff;
+}
+
+.main-content {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.main-content img {
+  border-radius: 10px;
+  box-shadow: 10px 12px 15px rgba(1.5, 0, 0, 1.5);
+}
+
+.api-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+@media only screen and (max-width: 1000px) {
+  .form-container {
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .explore-title h2 {
+    color: #000;
+    border-bottom: 2px solid #45a049;
+  }
+  .api-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-content {
+    flex: 1;
+  }
+}

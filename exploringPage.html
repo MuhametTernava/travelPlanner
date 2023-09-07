@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="./exploringPage.css" />
+
+    <title>Travel Planner</title>
+  </head>
+  <body>
+    <div class="container">
+      <video
+        id="background-video"
+        autoplay
+        loop
+        muted
+        poster="https://assets.codepen.io/6093409/river.jpg"
+      >
+        <source src="../media/vid01.mp4" type="video/mp4" />
+      </video>
+      <header>
+        <div class="bg-primary d-flex justify-between align-center">
+          <a href="../index.html" class="logo p-10">
+            <img src="../media/logo.png" alt="logo" />
+          </a>
+
+          <nav class="navigation d-flex justify-between p-20">
+            <a href="../index.html">Home</a>
+            <a href="exploringPage.html">Start Exploring</a>
+            <a href="../pages/planningPage.html">Start Planning</a>
+          </nav>
+        </div>
+      </header>
+      <div class="hero">
+        <div class="explore-title">
+          <h2 class="h2 color-white font-bold">
+            Enter the place where you want to go
+          </h2>
+        </div>
+
+        <form class="form-container" id="search-form">
+          <div class="search-city">
+            <img src="../media/locationIcon.png" alt="search city" />
+            <input
+              type="text"
+              id="city"
+              name="city"
+              placeholder="City or Destination"
+              required
+            />
+          </div>
+
+          <button class="search" type="submit">Submit search</button>
+        </form>
+      </div>
+      <main class="main-content"></main>
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-content">
+            <h3 class="footer-title">TravelPlanner</h3>
+            <p class="footer-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="footer-social">
+            <a href="#" class="social-icon">
+              <img src="../media/fbIcon.png" alt="social-icon" class="image1"
+            /></a>
+            <a href="#" class="social-icon">
+              <img
+                src="../media/twitterIcon.png"
+                alt="social-icon"
+                class="image1" /></a
+            ><a href="#" class="social-icon">
+              <img
+                src="../media/instaIcon.png"
+                alt="social-icon"
+                class="image1" /></a
+            ><a href="#" class="social-icon">
+              <img src="../media/gitIcon.png" alt="social-icon" class="image1"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="exploringPage.js"></script>
+  </body>
+</html>

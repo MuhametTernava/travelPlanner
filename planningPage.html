@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="./planningPage.css" />
+
+    <title>Travel Planner</title>
+  </head>
+  <body>
+    <div class="container">
+      <video
+        id="background-video"
+        autoplay
+        loop
+        muted
+        poster="https://assets.codepen.io/6093409/river.jpg"
+      >
+        <source src="../media/vid01.mp4" type="video/mp4" />
+      </video>
+      <header>
+        <div class="bg-primary d-flex justify-between align-center">
+          <a href="../index.html" class="logo p-10">
+            <img src="../media/logo.png" alt="logo" />
+          </a>
+
+          <nav class="navigation d-flex justify-between p-20">
+            <a href="../index.html">Home</a>
+            <a href="exploringPage.html">Start Exploring</a>
+            <a href="../pages/planningPage.html">Start Planning</a>
+          </nav>
+        </div>
+        <div class="heroPlanning">
+          <div>
+            <h2 class="planning-title h2 color-white font-bold">
+              Please fill the form and then we will contact you
+            </h2>
+          </div>
+        </div>
+      </header>
+      <main class="main-content">
+        <article class="d-flex flex-column justify-between align-start p-20">
+          <div class="w-full text-center color-white font-20">
+            <section class="planning-container">
+              <form class="form-container">
+                <fieldset>
+                  <legend>Contact Information</legend>
+
+                  <div class="contact-container">
+                    <div>
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        pattern="^[a-zA-Z]{2,15}$"
+                        required
+                      />
+                      <span id="name-error" class="error"></span>
+                    </div>
+                    <div>
+                      <input
+                        type="text"
+                        id="surname"
+                        name="surname"
+                        placeholder="Enter your surname"
+                        pattern="^[a-zA-Z]{2,15}$"
+                        required
+                      />
+                      <span id="surname-error" class="error"></span>
+                    </div>
+                    <div>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                      />
+                    </div>
+                    <div>
+                      <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Enter your phone number"
+                        pattern="[0-9]{6,15}"
+                        minlength="6"
+                        maxlength="15"
+                        required
+                      />
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset>
+                  <legend>Reservation</legend>
+                  <div>
+                    <fieldset>
+                      <div class="contact-container">
+                        <select id="trip-select" name="trip">
+                          <option value="" disabled selected>
+                            Select a destination
+                          </option>
+                        </select>
+                      </div>
+                    </fieldset>
+                  </div>
+                  <div>
+                    <fieldset>
+                      <label>Specify from which date:</label>
+                      <div class="contact-container">
+                        <input
+                          type="date"
+                          id="start-date-input"
+                          name="start-date"
+                        />
+                      </div>
+                      <label>Until:</label>
+                      <div class="contact-container">
+                        <input
+                          type="date"
+                          id="end-date-input"
+                          name="end-date"
+                        />
+                      </div>
+                    </fieldset>
+                  </div>
+                  <div>
+                    <fieldset class="plan-container">
+                      <div class="plan-subcontainer">
+                        <input
+                          type="radio"
+                          id="plan1"
+                          name="plan"
+                          value="Vacation Packages"
+                        />
+
+                        <label for="plan1">Vacation Packages</label>
+                      </div>
+                      <div class="plan-subcontainer">
+                        <input
+                          type="radio"
+                          id="plan2"
+                          name="plan"
+                          value="Group Tours"
+                        />
+
+                        <label for="plan2">Group Tours</label>
+                      </div>
+                      <div class="plan-subcontainer">
+                        <input
+                          type="radio"
+                          id="plan3"
+                          name="plan"
+                          value="Solo Planning"
+                        />
+
+                        <label for="plan3">Solo Planning</label>
+                      </div>
+                      <div class="plan-subcontainer">
+                        <input
+                          type="radio"
+                          id="plan4"
+                          name="plan"
+                          value="Business Planning"
+                        />
+
+                        <label for="plan4">Business Planning</label>
+                      </div>
+                    </fieldset>
+                  </div>
+                </fieldset>
+                <button
+                  id="get-offer-btn"
+                  class="button"
+                  style="vertical-align: middle"
+                >
+                  <span>GET OFFER!</span>
+                </button>
+              </form>
+            </section>
+          </div>
+        </article>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-content">
+            <h3 class="footer-title">TravelPlanner</h3>
+            <p class="footer-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="footer-social">
+            <a href="#" class="social-icon">
+              <img src="../media/fbIcon.png" alt="social-icon" class="image1"
+            /></a>
+            <a href="#" class="social-icon">
+              <img
+                src="../media/twitterIcon.png"
+                alt="social-icon"
+                class="image1" /></a
+            ><a href="#" class="social-icon">
+              <img
+                src="../media/instaIcon.png"
+                alt="social-icon"
+                class="image1" /></a
+            ><a href="#" class="social-icon">
+              <img src="../media/gitIcon.png" alt="social-icon" class="image1"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="planningPage.js"></script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+.planning-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.form-container {
+  width: 50%;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.contact-container input {
+  outline: none;
+  font-size: 17px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+fieldset {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+#reservation fieldset {
+  margin-bottom: 20px;
+}
+
+input[type="radio"] {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+select,
+input[type="date"] {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 17px;
+  outline: none;
+}
+
+.plan-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.plan-subcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+
+  width: 50%;
+}
+
+.heroPlanning {
+  width: 100%;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 0px 10px 0px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .form-container {
+    width: 75%;
+  }
+
+  .planning-title {
+    color: #000;
+    border-bottom: 2px solid #45a049;
+  }
+
+  select,
+  input[type="date"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 7px;
+    outline: none;
+    background-color: #45a049;
+  }
+}
